@@ -1,0 +1,135 @@
+/* Cards */
+.card {
+    background: var(--color-surface-light);
+    border: 1px solid var(--color-border-light);
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.08);
+}
+
+.card--muted {
+    background: var(--color-bg-light);
+}
+
+ul.card li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--color-border-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul.card li:last-child {
+    border-bottom: none;
+}
+
+/* Status Badges */
+.badge {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 0.3rem 0.8rem;
+    border-radius: 9999px;
+}
+
+.badge-completed,
+.badge-paid,
+.badge-active {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.badge-pending,
+.badge-unpaid {
+    background: #fef08a;
+    color: #854d0e;
+}
+
+.badge-processing {
+    background: #bfdbfe;
+    color: #1e3a8a;
+}
+
+.badge-cancelled,
+.badge-inactive {
+    background: #fecaca;
+    color: #991b1b;
+}
+
+.status-badge {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.3rem 0.75rem;
+    border-radius: 9999px;
+}
+
+.status-badge--default {
+    background: #e5e7eb;
+    color: #374151;
+}
+
+.status-badge--success {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.status-badge--info {
+    background: #bfdbfe;
+    color: #1e3a8a;
+}
+
+.status-badge--danger {
+    background: #fecaca;
+    color: #991b1b;
+}
+
+/* Feedback & Empty State */
+.msg {
+    margin-top: 1rem;
+}
+
+.msg-success {
+    color: var(--color-primary);
+}
+
+.msg-error {
+    color: #ef4444;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.text-muted {
+    color: var(--color-text-muted-light);
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Page Section Headers */
+.section-header {
+    margin-bottom: 1rem;
+}
+
+.section-header h2 {
+    margin: 0;
+}
+
+.section-header p {
+    margin: 0.25rem 0 0 0;
+    color: var(--color-text-muted-light);
+}
+
+.section {
+    margin-bottom: 2rem;
+}

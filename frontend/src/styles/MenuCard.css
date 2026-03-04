@@ -1,0 +1,57 @@
+/* MenuCard.css — Merchant Menu Card */
+.menu-card {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.menu-card__body {
+    flex: 1;
+}
+
+.menu-card__name {
+    margin: 0 0 0.25rem 0;
+    font-size: 1.2rem;
+}
+
+.menu-card__price {
+    margin: 0 0 0.5rem 0;
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+.menu-card__desc {
+    margin: 0 0 0.5rem 0;
+    font-size: 0.9rem;
+    color: var(--color-text-muted-light);
+}
+
+.menu-card__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.menu-card__actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* Menu Photo (used alongside MenuCard) */
+.menu-photo {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.menu-photo-placeholder {
+    background: var(--color-border-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text-muted-light);
+    font-size: 0.8rem;
+}

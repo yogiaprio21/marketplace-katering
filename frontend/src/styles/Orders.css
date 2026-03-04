@@ -1,0 +1,109 @@
+/* Orders.css — Shared: CustomerOrders + MerchantOrders */
+
+/* Order Card */
+.order-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.order-card__header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--color-border-light);
+    padding-bottom: 0.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.order-card__title strong {
+    display: block;
+}
+
+.order-card__subtitle {
+    font-size: 0.8rem;
+    color: var(--color-text-muted-light);
+}
+
+.order-card__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 0.5rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.order-card__footer--bordered {
+    border-top: 1px dashed var(--color-border-light);
+    padding-top: 0.75rem;
+}
+
+.order-card--compact {
+    padding: 1.25rem;
+}
+
+.order-card__hint {
+    margin: 0;
+    font-size: 0.85rem;
+}
+
+.order-card__meta {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.order-card__actions {
+    flex-wrap: wrap;
+}
+
+/* Order History (CustomerOrders) & Order Inbox (MerchantOrders) — shared layout */
+.order-history,
+.order-inbox {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.order-history__header,
+.order-inbox__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.order-history__header h2,
+.order-inbox__header h2 {
+    margin: 0;
+}
+
+.order-history__header p,
+.order-inbox__header p {
+    margin: 0.4rem 0 0 0;
+}
+
+.order-history__grid,
+.order-inbox__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+@media (min-width: 720px) {
+
+    .order-history__grid,
+    .order-inbox__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1100px) {
+
+    .order-history__grid,
+    .order-inbox__grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}

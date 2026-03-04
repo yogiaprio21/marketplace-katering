@@ -1,0 +1,52 @@
+/* Forms & Fields */
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    margin-bottom: 1rem;
+}
+
+.field label {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.field--compact {
+    margin-bottom: 0;
+}
+
+.field--compact label {
+    font-size: 0.85rem;
+}
+
+.field--row {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.field--row label {
+    cursor: pointer;
+    margin: 0;
+}
+
+.input {
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--color-border-light);
+    background: var(--color-surface-light);
+    color: var(--color-text-light);
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.input:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+.input--checkbox {
+    width: auto;
+}

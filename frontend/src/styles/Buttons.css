@@ -1,0 +1,104 @@
+/* Button Variants */
+.btn-danger {
+    background: #ef4444;
+    border-color: #ef4444;
+}
+
+.btn-danger:hover {
+    background: #dc2626;
+}
+
+.btn-success {
+    background: #10b981;
+    border-color: #10b981;
+}
+
+.btn-success:hover {
+    background: #059669;
+}
+
+.btn-info {
+    background: #3b82f6;
+    border-color: #3b82f6;
+}
+
+.btn-info:hover {
+    background: #2563eb;
+}
+
+.btn-outline {
+    background: transparent;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+}
+
+.btn-outline:hover {
+    background: var(--color-primary);
+    color: white;
+}
+
+.btn-outline-danger {
+    background: transparent;
+    color: #ef4444;
+    border: 1px solid #ef4444;
+}
+
+.btn-outline-danger:hover {
+    background: #ef4444;
+    color: white;
+}
+
+.btn-ghost {
+    background: transparent;
+    color: var(--color-text-light);
+    border: 1px solid var(--color-text-light);
+}
+
+.btn-ghost:hover {
+    background: var(--color-bg-light);
+}
+
+.btn-full {
+    width: 100%;
+}
+
+.btn-sm {
+    padding: 0.3rem 0.8rem;
+    font-size: 0.8rem;
+}
+
+.btn-lg {
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.btn-add-row {
+    background: transparent;
+    border: 1px dashed var(--color-primary);
+    color: var(--color-primary);
+    font-size: 0.9rem;
+}
+
+.btn-add-row:hover {
+    background: rgba(59, 130, 246, 0.05);
+}
+
+.btn-remove {
+    background: transparent;
+    border: none;
+    color: #ef4444;
+    padding: 0.5rem;
+    box-shadow: none;
+}
+
+.btn-remove:hover {
+    background: #fee2e2;
+    transform: none;
+    box-shadow: none;
+}
+
+.btn-filter {
+    height: 42px;
+    align-self: flex-end;
+}

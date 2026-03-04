@@ -1,0 +1,36 @@
+/* Auth.css — Styles for Authentication Pages */
+.auth-container {
+    max-width: 720px;
+    margin: 2rem auto;
+}
+
+.auth-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.auth-form-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem 1rem;
+    margin-bottom: 1rem;
+}
+
+.auth-form-grid .field {
+    margin-bottom: 0;
+}
+
+@media (min-width: 720px) {
+    .auth-form-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+.auth-form-span-2 {
+    grid-column: 1 / -1;
+}
+
+.auth-container .card button {
+    width: 100%;
+}
