@@ -1,27 +1,22 @@
-# File Node/React Standard
 node_modules/
 /dist
 /build
 .DS_Store
 *.log
 
-# File Composer/Laravel Standard
 vendor/
 public/storage
 public/hot
 public/build
 
-# File Sensitif (Jangan diisi dengan token riil jika diunggah)
 .env
 .env.backup
 .env.production
 .env.local
 .env.*.local
 
-# Abaikan semua file .txt dan .md di ROOT DIREKTORI (Luar backend/frontend)
 /*.txt
 /*.md
 
-# Berikan pengecualian untuk file README di dalam folder masing-masing jika diperlukan
 !backend/README.md
 !frontend/README.md
